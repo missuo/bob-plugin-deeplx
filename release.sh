@@ -3,7 +3,7 @@
  # @Author: Vincent Young
  # @Date: 2023-03-05 20:29:43
  # @LastEditors: Vincent Young
- # @LastEditTime: 2023-03-05 21:09:01
+ # @LastEditTime: 2023-03-05 21:20:06
  # @FilePath: /bob-plugin-deeplx/release.sh
  # @Telegram: https://t.me/missuo
  # 
