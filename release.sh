@@ -3,14 +3,13 @@
  # @Author: Vincent Young
  # @Date: 2023-03-05 20:29:43
  # @LastEditors: Vincent Young
- # @LastEditTime: 2023-03-05 21:02:33
+ # @LastEditTime: 2023-03-05 21:05:55
  # @FilePath: /bob-plugin-deeplx/release.sh
  # @Telegram: https://t.me/missuo
  # 
  # Copyright © 2023 by Vincent, All Rights Reserved. 
 ### 
-version=${1#v}
-
+version=${1#refs/tags/v}
 zip -r bob-plugin-deeplx-$version.bobplugin src
 
 sha256_deeplx=$(sha256sum bob-plugin-deeplx-version.bobplugin | cut -d ' ' -f 1)
