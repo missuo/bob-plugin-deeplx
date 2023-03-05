@@ -15,9 +15,7 @@ jobs:
 
       - run: bash release.sh "${{ github.ref }}"
 
-      - name: Add and commit changes
-        uses: EndBug/add-and-commit@v7
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          author_name: Vincent Young
-          author_email: missuo@pm.me
-          message: "update version"
+          branch: main
+          commit_message: update release version
