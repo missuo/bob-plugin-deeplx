@@ -3,14 +3,12 @@
  # @Author: Vincent Young
  # @Date: 2023-03-05 20:29:43
  # @LastEditors: Vincent Young
- # @LastEditTime: 2023-03-05 20:49:32
- # @FilePath: /bob-plugin-deeplx/scripts/release.sh
+ # @LastEditTime: 2023-03-05 20:52:35
+ # @FilePath: /bob-plugin-deeplx/release.sh
  # @Telegram: https://t.me/missuo
  # 
  # Copyright © 2023 by Vincent, All Rights Reserved. 
 ### 
-cd ../
-
 zip -r bob-plugin-deeplx.bobplugin src
 
 sha256_deeplx=$(sha256sum bob-plugin-deeplx.bobplugin | cut -d ' ' -f 1)

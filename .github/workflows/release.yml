@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - run: bash scripts/release.sh "${{ github.ref }}"
+      - run: bash release.sh "${{ github.ref }}"
 
       - name: Release
         uses: softprops/action-gh-release@v1
