@@ -15,11 +15,6 @@ jobs:
 
       - run: bash release.sh "${{ github.ref }}"
 
-      - name: Release
-        uses: softprops/action-gh-release@v1
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          draft: false
-          files: |
-            dist/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GT_Token }}
+          commit_message: update release version
