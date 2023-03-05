@@ -3,7 +3,7 @@
  # @Author: Vincent Young
  # @Date: 2023-03-05 20:29:43
  # @LastEditors: Vincent Young
- # @LastEditTime: 2023-03-05 21:20:06
+ # @LastEditTime: 2023-03-05 21:33:33
  # @FilePath: /bob-plugin-deeplx/release.sh
  # @Telegram: https://t.me/missuo
  # 
@@ -25,6 +25,5 @@ json_data=$(cat $json_file)
 updated_json=$(echo $json_data | jq --argjson new_version "$new_version" '.versions += [$new_version]')
 
 echo $updated_json > $json_file
-mkdir dist
-# move to dist
+
 mv *.bobplugin dist
