@@ -3,7 +3,7 @@
  # @Author: Vincent Young
  # @Date: 2023-03-05 20:29:43
  # @LastEditors: Vincent Young
- # @LastEditTime: 2023-03-05 21:05:55
+ # @LastEditTime: 2023-03-05 21:07:17
  # @FilePath: /bob-plugin-deeplx/release.sh
  # @Telegram: https://t.me/missuo
  # 
@@ -12,9 +12,9 @@
 version=${1#refs/tags/v}
 zip -r bob-plugin-deeplx-$version.bobplugin src
 
-sha256_deeplx=$(sha256sum bob-plugin-deeplx-version.bobplugin | cut -d ' ' -f 1)
+sha256_deeplx=$(sha256sum bob-plugin-deeplx-$version.bobplugin | cut -d ' ' -f 1)
 
-download_link="https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-version.bobplugin"
+download_link="https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-$version.bobplugin"
 
 new_version="{\"version\": \"version\", \"desc\": \"None\", \"sha256\": \"$sha256_deeplx\", \"url\": \"$download_link\", \"minBobVersion\": \"0.5.0\"}"
 
@@ -26,4 +26,4 @@ updated_json=$(echo $json_data | jq --argjson new_version "$new_version" '.versi
 echo $updated_json > $json_file
 mkdir dist
 # move to dist
-mv bob-plugin-deeplx.bobplugin dist
+mv *.bobplugin dist
