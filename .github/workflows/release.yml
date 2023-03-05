@@ -21,10 +21,3 @@ jobs:
           author_name: Vincent Young
           author_email: missuo@pm.me
           message: "update version"
-
-      - name: Push changes
-        uses: EndBug/git-push@v2
-        with:
-          branch: main
-          force: true # Optional, use it only if you need to force push
-          github_token: ${{ secrets.GITHUB_TOKEN }}
