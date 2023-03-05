@@ -1,1 +1,1 @@
-{ "identifier": "me.missuo.deeplx.translate", "versions": [] }
+{ "identifier": "me.missuo.deeplx.translate", "versions": [ { "version": "1.0.0", "desc": "None", "sha256": "7cb52030efc299a1c9c468808a94636af245d3ef82aaa0d6b731b6275c60e12c", "url": "https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-1.0.0.bobplugin", "minBobVersion": "0.5.0" } ] }
