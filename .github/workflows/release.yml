@@ -15,6 +15,16 @@ jobs:
 
       - run: bash release.sh "${{ github.ref }}"
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Add and commit changes
+        uses: EndBug/add-and-commit@v7
         with:
-          commit_message: update release version
+          author_name: Vincent Young
+          author_email: missuo@pm.me
+          message: "update version"
+
+      - name: Push changes
+        uses: EndBug/git-push@v2
+        with:
+          branch: main
+          force: true # Optional, use it only if you need to force push
+          github_token: ${{ secrets.GITHUB_TOKEN }}
