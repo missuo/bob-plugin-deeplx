@@ -1,7 +1,7 @@
 {
     "identifier": "me.missuo.deeplx.translate",
     "category": "translate",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "DeepL X Pro",
     "summary": "Plugin based on OwO-Network/DeepLX",
     "author": "missuo",
