@@ -30,7 +30,7 @@ bash <(curl -Ls https://cpp.li/deeplx)
 ```
 
 ### Download Plugin
-[Click here](https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-1.0.0.bobplugin)
+[Click here](https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-1.0.1.bobplugin)
 
 **If you are using Homebrew deployment, then you don't need to set up the plugin, it is installed and ready to use. If you are using server deployment, please change the API URL. ex: `http://1.1.1.1:1188/translate`**
 
