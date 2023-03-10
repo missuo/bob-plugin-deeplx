@@ -9,7 +9,7 @@ The original author has stopped maintaining it, but DeepL supports new languages
 ### Install Bob
 [![Download on the Mac App Store](https://cdn.ripperhe.com/oss/master/2022/0626/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg)](https://apps.apple.com/cn/app/id1630034110#?platform=mac)
 
-### Depoly DeepL X
+### Deploy DeepL X
 #### Mac - Homebrew (Recommended)
 ```bash
 brew tap owo-network/brew
