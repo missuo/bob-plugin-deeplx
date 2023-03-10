@@ -1,10 +1,1 @@
-{
-    "identifier": "me.missuo.deeplx.translate",
-    "versions": [{
-        "version": "1.0.0",
-        "desc": "None",
-        "sha256": "7cb52030efc299a1c9c468808a94636af245d3ef82aaa0d6b731b6275c60e12c",
-        "url": "https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-1.0.0.bobplugin",
-        "minBobVersion": "0.5.0"
-    }]
-}
+{ "identifier": "me.missuo.deeplx.translate", "versions": [ { "version": "1.0.0", "desc": "None", "sha256": "7cb52030efc299a1c9c468808a94636af245d3ef82aaa0d6b731b6275c60e12c", "url": "https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-1.0.0.bobplugin", "minBobVersion": "0.5.0" }, { "version": "1.0.1", "desc": "None", "sha256": "3a8ef88198c2b1eb66c6c4398f1f51e3c4cf358fb29f8890ddb0352e135c6a78", "url": "https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-1.0.1.bobplugin", "minBobVersion": "0.5.0" } ] }
