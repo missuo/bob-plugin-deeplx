@@ -5,6 +5,8 @@ This is a DeepL plugin for Bob. Based on [OwO-Network/DeepLX](https://github.com
 The functionality of this plugin is the same as the old [clubxdev/bob-plugin-deeplx](https://github.com/clubxdev/bob-plugin-deeplx). 
 The original author has stopped maintaining it, but DeepL supports new languages, so I had to rewrite a plugin to support all languages. This plugin and [OwO-Network/DeepLX](https://github.com/OwO-Network/DeepLX) are now maintained by me.
 
+**`Alternatives` has been supported since [v1.0.2](https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-1.0.2.bobplugin), but you must use DeepLX greater or equal to [v0.7.7](https://github.com/OwO-Network/DeepLX).**
+
 ## Guide
 ### Install Bob
 [![Download on the Mac App Store](https://cdn.ripperhe.com/oss/master/2022/0626/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg)](https://apps.apple.com/cn/app/id1630034110#?platform=mac)
