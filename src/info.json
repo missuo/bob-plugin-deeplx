@@ -1,7 +1,7 @@
 {
     "identifier": "me.missuo.deeplx.translate",
     "category": "translate",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "DeepL X Pro",
     "summary": "Plugin based on OwO-Network/DeepLX",
     "author": "missuo",
@@ -15,5 +15,22 @@
         "title": "API URL",
         "defaultValue": "http://localhost:1188/translate",
         "desc": "If you deploy the API locally, there is no need to modify it."
-    }]
+    },{
+        "identifier": "alternatives",
+        "type": "menu",
+        "title": "Alternatives",
+        "desc": "After turning on this function, an alternative option will be displayed, which is turned on by default.",
+        "defaultValue": "1",
+        "menuValues": [
+            {
+                "title": "Enable",
+                "value": "1"
+            },
+            {
+                "title": "Disable",
+                "value": "2"
+            }
+        ]
+    }
+]
 }

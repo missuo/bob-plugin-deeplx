@@ -2,7 +2,7 @@
  * @Author: Vincent Young
  * @Date: 2023-03-05 16:18:02
  * @LastEditors: Vincent Young
- * @LastEditTime: 2023-03-17 13:23:27
+ * @LastEditTime: 2023-03-28 17:49:29
  * @FilePath: /bob-plugin-deeplx/src/main.js
  * @Telegram: https://t.me/missuo
  * 
@@ -52,19 +52,30 @@ function translate(query, completion) {
             if (resp.data.alternatives) {
                 alternativesString = resp.data.alternatives.join('\n');
             }
-        completion({
-            result: {
-                from: query.detectFrom,
-                to: query.detectTo,
-                toParagraphs: resp.data.data.split('\n'),
-                toDict: {
-                    "additions": [{
-                        "name": "Alternatives",
-                        "value": alternativesString
-                    }]
-                }
-            },
-        });
+            if ($option.alternatives == "1"){
+                completion({
+                    result: {
+                        from: query.detectFrom,
+                        to: query.detectTo,
+                        toParagraphs: resp.data.data.split('\n'),
+                        toDict: {
+                            "additions": [{
+                                "name": "Alternatives",
+                                "value": alternativesString
+                            }]
+                        }
+                    },
+                });
+            }else{
+                completion({
+                    result: {
+                        from: query.detectFrom,
+                        to: query.detectTo,
+                        toParagraphs: resp.data.data.split('\n')
+                    },
+                });
+            }
+        
 
         if (statusCode === 406) {
             completion({
