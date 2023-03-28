@@ -9,28 +9,30 @@
     "homepage": "https://github.com/missuo/bob-plugin-deeplx",
     "icon": "icon.png",
     "minBobVersion": "0.5.0",
-    "options": [{
-        "identifier": "url",
-        "type": "text",
-        "title": "API URL",
-        "defaultValue": "http://localhost:1188/translate",
-        "desc": "If you deploy the API locally, there is no need to modify it."
-    },{
-        "identifier": "alternatives",
-        "type": "menu",
-        "title": "Alternatives",
-        "desc": "After turning on this function, an alternative option will be displayed, which is turned on by default.",
-        "defaultValue": "1",
-        "menuValues": [
-            {
-                "title": "Enable",
-                "value": "1"
-            },
-            {
-                "title": "Disable",
-                "value": "2"
-            }
-        ]
-    }
-]
+    "options": [
+        {
+            "identifier": "url",
+            "type": "text",
+            "title": "API URL",
+            "defaultValue": "http://localhost:1188/translate",
+            "desc": "If you deploy the API locally, there is no need to modify it."
+        },
+        {
+            "identifier": "alternatives",
+            "type": "menu",
+            "title": "Alternatives",
+            "desc": "After turning on this function, an alternative option will be displayed, which is turned on by default.",
+            "defaultValue": "1",
+            "menuValues": [
+                {
+                    "title": "Enable",
+                    "value": "1"
+                },
+                {
+                    "title": "Disable",
+                    "value": "2"
+                }
+            ]
+        }
+    ]
 }
