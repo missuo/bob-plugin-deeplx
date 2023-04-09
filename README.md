@@ -5,9 +5,13 @@ This is a DeepL plugin for Bob. Based on [OwO-Network/DeepLX](https://github.com
 The functionality of this plugin is the same as the old [clubxdev/bob-plugin-deeplx](https://github.com/clubxdev/bob-plugin-deeplx). 
 The original author has stopped maintaining it, but DeepL supports new languages, so I had to rewrite a plugin to support all languages. This plugin and [OwO-Network/DeepLX](https://github.com/OwO-Network/DeepLX) are now maintained by me.
 
-**`Alternatives` has been supported since [v1.0.2](https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-1.0.2.bobplugin), but you must use DeepLX greater or equal to [v0.7.7](https://github.com/OwO-Network/DeepLX).**
+**`Alternatives` has been supported since [v1.0.2](https://github.com/missuo/bob-plugin-deeplx#v102), but you must use DeepLX greater or equal to [v0.7.7](https://github.com/OwO-Network/DeepLX).**
 
 ## Update Log
+### v1.0.4
+- Plugin prompt to switch to Chinese.
+- Change the plugin name to `DeepL X`.
+
 ### v1.0.3
 - Support for enabling `Alternatives` or disabling.
 
@@ -39,7 +43,7 @@ bash <(curl -Ls https://cpp.li/deeplx)
 ```
 
 ### Download Plugin
-[Click here](https://raw.githubusercontent.com/missuo/bob-plugin-deeplx/main/dist/bob-plugin-deeplx-1.0.3.bobplugin)
+[Click here](https://github.com/missuo/bob-plugin-deeplx/releases)
 
 **If you are using Homebrew deployment, then you don't need to set up the plugin, it is installed and ready to use. If you are using server deployment, please change the API URL.**
  ```
