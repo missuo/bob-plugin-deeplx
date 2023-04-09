@@ -1,8 +1,8 @@
 {
     "identifier": "me.missuo.deeplx.translate",
     "category": "translate",
-    "version": "1.0.3",
-    "name": "DeepL X Pro",
+    "version": "1.0.4",
+    "name": "DeepL X",
     "summary": "Plugin based on OwO-Network/DeepLX",
     "author": "missuo",
     "appcast": "https://github.com/missuo/bob-plugin-deeplx/raw/main/appcast.json",
@@ -13,23 +13,23 @@
         {
             "identifier": "url",
             "type": "text",
-            "title": "API URL",
+            "title": "API",
             "defaultValue": "http://localhost:1188/translate",
-            "desc": "If you deploy the API locally, there is no need to modify it."
+            "desc": "如果你在本地部署了API，不要修改。"
         },
         {
             "identifier": "alternatives",
             "type": "menu",
             "title": "Alternatives",
-            "desc": "After turning on this function, an alternative option will be displayed, which is turned on by default.",
+            "desc": "开启此功能后，将显示一个备选方案,默认开启。",
             "defaultValue": "1",
             "menuValues": [
                 {
-                    "title": "Enable",
+                    "title": "开启",
                     "value": "1"
                 },
                 {
-                    "title": "Disable",
+                    "title": "关闭",
                     "value": "2"
                 }
             ]
