@@ -15,11 +15,6 @@ jobs:
 
       - run: bash release.sh ${{ github.ref }}
 
-      # - uses: stefanzweifel/git-auto-commit-action@v4
-      #   with:
-      #     branch: main
-      #     commit_message: new release!
-
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
@@ -28,3 +23,11 @@ jobs:
             dist/*.bobplugin
         env:
           GITHUB_TOKEN: ${{ secrets.GT_Token }}
+      
+      - run: rm -rf dist
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: new release!
+      
