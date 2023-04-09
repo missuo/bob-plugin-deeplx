@@ -8,6 +8,9 @@ The original author has stopped maintaining it, but DeepL supports new languages
 **`Alternatives` has been supported since [v1.0.2](https://github.com/missuo/bob-plugin-deeplx#v102), but you must use DeepLX greater or equal to [v0.7.7](https://github.com/OwO-Network/DeepLX).**
 
 ## Update Log
+### v1.0.5
+- Fix some prompt errors.
+
 ### v1.0.4
 - Plugin prompt to switch to Chinese.
 - Change the plugin name to `DeepL X`.
