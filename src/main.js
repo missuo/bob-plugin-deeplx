@@ -5,8 +5,8 @@
  * @LastEditTime: 2023-03-28 18:02:37
  * @FilePath: /bob-plugin-deeplx/src/main.js
  * @Telegram: https://t.me/missuo
- * 
- * Copyright © 2023 by Vincent, All Rights Reserved. 
+ *
+ * Copyright © 2023 by Vincent, All Rights Reserved.
  */
 var lang = require("./lang.js");
 
@@ -36,9 +36,11 @@ function translate(query, completion) {
     console.log(body);
 
     (async () => {
+        const urls = $option.url.split(",");
+        const randomUrl = urls[Math.floor(Math.random() * urls.length)];
         const resp = await $http.request({
             method: "POST",
-            url: $option.url,
+            url: randomUrl,
             header: {
                 'Content-Type': 'application/json'
             },
