@@ -26,7 +26,7 @@ brew list --versions deeplx
 ```
 #### Linux Server
 ```bash
-bash <(curl -Ls https://cpp.li/deeplx)
+bash <(curl -Ls https://qwq.mx/deeplx)
 ```
 
 ### Download Plugin
