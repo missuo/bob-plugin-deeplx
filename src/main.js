@@ -2,7 +2,7 @@
  * @Author: Vincent Young
  * @Date: 2023-03-05 16:18:02
  * @LastEditors: Vincent Young
- * @LastEditTime: 2023-03-28 18:02:37
+ * @LastEditTime: 2023-11-16 03:04:30
  * @FilePath: /bob-plugin-deeplx/src/main.js
  * @Telegram: https://t.me/missuo
  *
@@ -38,11 +38,13 @@ function translate(query, completion) {
     (async () => {
         const urls = $option.url.split(",");
         const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+        const accessToken = $option.token;
         const resp = await $http.request({
             method: "POST",
             url: randomUrl,
             header: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + accessToken
             },
             body: $data.fromUTF8(body)
         });
@@ -50,7 +52,7 @@ function translate(query, completion) {
             statusCode
         } = resp.response;
         let alternativesString = "";
-        if (statusCode === 200 && resp.data.data)
+        if (statusCode === 200 && resp.data.data){
             if (resp.data.alternatives) {
                 alternativesString = resp.data.alternatives.join('\n');
             }
@@ -77,9 +79,7 @@ function translate(query, completion) {
                 },
             });
         }
-
-
-        if (statusCode === 406) {
+        }else if (statusCode === 406) {
             completion({
                 error: {
                     type: "unsupportedLanguage",
@@ -95,12 +95,20 @@ function translate(query, completion) {
                 },
             });
             return;
+        } else if (statusCode === 401){
+            completion({
+                error: {
+                    type: "secretKey",
+                    message: "Access denied",
+                },
+            });
+            return;
         }
     })().catch(err => {
         completion({
             error: {
                 type: err._type || "unknown",
-                message: err._message || "未知错误",
+                message: err._message || "Unknown error",
                 addition: err._addition,
             },
         });
