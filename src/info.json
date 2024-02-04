@@ -1,7 +1,7 @@
 {
     "identifier": "me.missuo.deeplx.translate",
     "category": "translate",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "name": "DeepL X",
     "summary": "Plugin based on OwO-Network/DeepLX",
     "author": "missuo",
@@ -15,7 +15,10 @@
             "type": "text",
             "title": "API",
             "defaultValue": "http://localhost:1188/translate",
-            "desc": "如果你在本地部署了API，不要修改。"
+            "desc": "如果你在本地部署了API，不要修改。",
+            "textConfig": {
+                "type": "visible"
+            }
         },
         {
             "identifier": "token",
