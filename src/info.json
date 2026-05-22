@@ -1,7 +1,7 @@
 {
     "identifier": "me.missuo.deeplx.translate",
     "category": "translate",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "name": "DeepL X",
     "summary": "Plugin based on OwO-Network/DeepLX",
     "author": "missuo",
@@ -26,23 +26,6 @@
             "title": "Token",
             "desc": "如果你在服务端没有设置，请留空。",
             "defaultValue": ""
-        },
-        {
-            "identifier": "alternatives",
-            "type": "menu",
-            "title": "Alternatives",
-            "desc": "开启此功能后，将显示一个替代结果，默认开启。",
-            "defaultValue": "1",
-            "menuValues": [
-                {
-                    "title": "开启",
-                    "value": "1"
-                },
-                {
-                    "title": "关闭",
-                    "value": "2"
-                }
-            ]
         }
     ]
 }
